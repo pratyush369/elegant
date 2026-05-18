@@ -156,6 +156,16 @@ const build = series(
 );
 exports.build = build;
 
+// Build only theme assets (no documentation) - useful for theme forks
+const buildTheme = series(
+  compileBootstrapLess,
+  compileResponsiveLess,
+  compileCSS,
+  minifyJS
+);
+exports.buildTheme = buildTheme;
+
 const elegant = series(build, parallel(watchFiles, reload));
 exports.elegant = elegant;
+exports.default = elegant;
 exports.default = elegant;

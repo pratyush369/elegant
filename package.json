@@ -1,5 +1,12 @@
 {
   "name": "Pelican-Elegant",
+  "version": "5.4.0",
+  "scripts": {
+    "build": "gulp buildTheme",
+    "dev": "gulp elegant",
+    "build:docs": "gulp build",
+    "validate": "gulp validate"
+  },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/exec": "^6.0.3",
