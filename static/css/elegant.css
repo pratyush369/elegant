@@ -144,8 +144,8 @@ h6 {
   margin: 10px 0px;
 }
 .page-header {
-  border-bottom: 2px solid maroon;
-  color: maroon;
+  border-bottom: 2px solid rgb(0, 121, 202);
+  color: rgb(0, 121, 202);
   margin: 10px 0 30px 0;
 }
 .page-header h1 {
